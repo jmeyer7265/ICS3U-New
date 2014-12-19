@@ -20,7 +20,7 @@ public class BlackJack {
     public static int JACK = 10;	
     public static int QUEEN = 10;	
     public static int KING = 10;	
-
+//JOSHUA MEYER
     public static void main(String[] args) {
         NumberFormat moneyFormatter = NumberFormat.getCurrencyInstance(); //uses the currency figure specific to a locale
         Scanner userInput = new Scanner(System.in); // initializes scanner
