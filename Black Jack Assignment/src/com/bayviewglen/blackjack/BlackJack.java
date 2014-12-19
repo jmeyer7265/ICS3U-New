@@ -32,15 +32,17 @@ public class BlackJack {
             while (!done) {
 
                 String name = getUserName(userInput); //gets name from method
-                playerLocale = getLocale(userInput, wallet); //gets locale from method
+                
                 boolean quit = false;
                 if (name.equalsIgnoreCase("quit")) { // if the user name is 'quit', the game closes
                     quit = true;
                     done = true;
                     close = true;
                 }
+                playerLocale = getLocale(userInput, wallet); //gets locale from method
                 while (!quit) {
-                    int bet = getBet(wallet, userInput); //gets bet from method and takes it from wallet
+                
+                	int bet = getBet(wallet, userInput); //gets bet from method and takes it from wallet
                     wallet -= bet;
                     int userValue = 0;
                     int dealerValue = 0;
@@ -269,16 +271,18 @@ public class BlackJack {
 
 
                         if (end == 2) {
-                            done = true;
+                          quit = true;
+                        
+                        }
                         }
                     }
 
                 }
             }
-
-            done = false;
+        	
+        
         }
-    }
+    
 
     private static int getBet(int wallet, Scanner userInput) {		//getbet method
         boolean validBet = false;
