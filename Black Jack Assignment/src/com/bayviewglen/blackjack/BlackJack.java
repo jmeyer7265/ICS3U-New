@@ -13,7 +13,7 @@ public class BlackJack {
     public static int FOUR = 4;
     public static int FIVE = 5;
     public static int SIX = 6;
-    public static int SEVEN = 7;	//NO MAGIC NUMBERS!!!
+    public static int SEVEN = 7;	//NO MAGIC NUMBERS!!!!
     public static int EIGHT = 8;
     public static int NINE = 9;
     public static int TEN = 10;
